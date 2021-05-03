@@ -1,21 +1,20 @@
 /* eslint-disable no-console */
 <template>
-  <div class="listContainer">
-    <StudentItem
-      v-for="student in students"
-      :key="student.id"
-      :student="student"
-      @input="onInput"
-      @delete="onDeleteClick"/>
-
-    <b-button
-      @click="addNewStudent({id: getNewId(), name: ''})">Add new student</b-button>
-
-    <!-- <li
-      v-for="student in students"
-      :key="student.id">
-      <textblock>{{ student.name }}</textblock>
-    </li> -->
+  <div>
+    <b-container class="list-container">
+      <b-row cols="1">
+          <StudentItem
+            v-for="student in students"
+            :key="student.id"
+            :student="student"
+            @input="onInput"
+            @delete="onDeleteClick"/>
+      </b-row>
+      <b-row>
+        <b-button
+          @click="addNewStudent({id: getNewId(), name: ''})">Add new student</b-button>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -39,7 +38,7 @@ export default {
     };
   },
   methods: {
-    onInput(student) {
+    onInput() {
       // TODO update db
     },
     addNewStudent(student) {
@@ -77,8 +76,8 @@ export default {
 
 <style lang="css">
 
-.listContainer {
-  flex-basis: auto;
-  max-width: 30vw;
+.list-container {
+  max-width: 400px;
 }
+
 </style>
