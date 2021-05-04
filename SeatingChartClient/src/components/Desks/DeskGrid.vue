@@ -93,7 +93,7 @@ export default {
   border-color: grey;
   border-style: solid;
   padding: 0px, 0px;
-  width: 100%;
+  /* width: 100%; */
   height: 40px;
 }
 

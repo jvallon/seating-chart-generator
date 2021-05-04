@@ -2,8 +2,8 @@
 <template>
   <div>
     <b-container class="list-container">
-      <b-row cols="1">
-          <StudentItem
+      <b-row cols="3">
+          <StudentItem class="student-item"
             v-for="student in students"
             :key="student.id"
             :student="student"
@@ -76,8 +76,12 @@ export default {
 
 <style lang="css">
 
-.list-container {
-  max-width: 400px;
+/* .list-container {
+  max-width: 90vw;
+} */
+
+.student-item {
+  padding: 4px;
 }
 
 </style>

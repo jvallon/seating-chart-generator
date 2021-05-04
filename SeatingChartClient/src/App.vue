@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <!-- <b-container> -->
-      <b-row cols="lg">
-          <StudentList class="col-4 student-list"/>
-        <desk-grid class="col-8 desk-grid" :rows="8" :cols="12"></desk-grid>
+    <b-container>
+      <b-row>
+          <StudentList class="student-list"/>
       </b-row>
-    <!-- </b-container> -->
+      <b-row>
+        <desk-grid class="desk-grid"></desk-grid>
+      </b-row>
+    </b-container>
     <!-- <router-view/> -->
   </div>
 </template>
@@ -38,11 +40,11 @@ export default {
 }
 
 .student-list {
-  min-width: 200px;
-  max-width: 400px;
+  /* min-width: 200px;
+  max-width: 400px; */
 }
 
 .desk-grid {
-  min-width: 600px;
+  min-width: 80vw;
 }
 </style>
