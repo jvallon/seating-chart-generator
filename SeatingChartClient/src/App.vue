@@ -3,7 +3,7 @@
     <!-- <b-container> -->
       <b-row cols="lg">
           <StudentList class="col-4 student-list"/>
-        <desk-grid class="col-8 desk-grid" :rows="8" :cols="16"></desk-grid>
+        <desk-grid class="col-8 desk-grid" :rows="8" :cols="12"></desk-grid>
       </b-row>
     <!-- </b-container> -->
     <!-- <router-view/> -->
