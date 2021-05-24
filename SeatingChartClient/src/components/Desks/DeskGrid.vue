@@ -27,18 +27,20 @@
         </b-col>
       </b-row>
     </b-container>
-
+    <DeskCard :startPos="{ x:'0', y:'0' }"></DeskCard>
     <label>Active desks: {{ activeDesks }}</label>
   </div>
 </template>
 
 <script>
 import DeskGridCell from '@/components/Desks/DeskGridCell';
+import DeskCard from '@/components/Desks/DeskCard';
 
 export default {
   name: 'DeskGrid',
   components: {
     DeskGridCell,
+    DeskCard,
   },
   data() {
     return {

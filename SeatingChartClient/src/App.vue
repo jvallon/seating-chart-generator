@@ -4,7 +4,7 @@
       <b-row>
           <StudentList class="student-list"/>
       </b-row>
-      <b-row>
+      <b-row cols="1">
         <desk-grid class="desk-grid"></desk-grid>
       </b-row>
     </b-container>
@@ -38,13 +38,14 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
+/*
 .student-list {
-  /* min-width: 200px;
-  max-width: 400px; */
+  min-width: 200px;
+  max-width: 400px;
 }
 
 .desk-grid {
   min-width: 80vw;
-}
+  max-width: 100vw;
+} */
 </style>
